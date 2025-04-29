@@ -33,22 +33,11 @@ namespace DataManagement
                 //Types t7 = new Types() { TypeID = 7, PokeType = "Normal", Effective = "Normal", Weakness = "Fighting" };
                 //Types t8 = new Types() { TypeID = 8, PokeType = "Fighting", Effective = "Electric", Weakness = "Grass" };   // strong against loads of types but alos weak against loads
 
-
-
-
-
-
                 Pokemon p1 = new Pokemon() { PokeDexID = 1, PokemonName = "Charizard", Types = t1, ImageURL_Back = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png", ImageURL_Front = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png", Health = 280 };
                 Pokemon p2 = new Pokemon() { PokeDexID = 2, PokemonName = "Venusaur", Types = t3, ImageURL_Back = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png", ImageURL_Front = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png", Health = 350 };
                 Pokemon p3 = new Pokemon() { PokeDexID = 3, PokemonName = "Blastoise", Types = t2, ImageURL_Back = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png", ImageURL_Front = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png", Health = 300 };
 
                 //Pokemon p4 = new Pokemon() { PokeDexID = 1, PokemonName = "Charizard", Types = t1 };
-
-
-
-
-
-
 
 
                 //Problems with creating the db 
