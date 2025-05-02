@@ -23,7 +23,7 @@
         </Grid.RowDefinitions>
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="65,1,26,1" Grid.Row="3" BorderBrush="Black"/>
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="25,1,65,1" Grid.Row="3" Grid.Column="2" BorderBrush="Black"/>
-        <Button Content="Start" HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Width="88" Grid.Row="3" FontSize="20" Grid.Column="1" Click="Button_Click"/>
+        <Button Content="Start" HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Width="88" Grid.Row="3" FontSize="20" Grid.Column="1" />
 
 
         <Grid Background="#FF0052FF" Grid.Row="0" Grid.ColumnSpan="3">

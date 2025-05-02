@@ -23,16 +23,5 @@ namespace StartPage
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            // this is to start the game
-            //have to change the code to become an if statment with a hidden box f
-            // for otherwise
-            P1Battle b1Window = new P1Battle();
-            b1Window.Show();
-
-            this.Close();
-        }
     }
 }

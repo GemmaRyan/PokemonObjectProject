@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,10 +41,22 @@ namespace DataManagement
                 //Pokemon p4 = new Pokemon() { PokeDexID = 1, PokemonName = "Charizard", Types = t1 };
 
 
-                //Problems with creating the db 
-                // saying smthabout the types names -- check later
+                Moves m1 = new Moves() { MoveID = 1, MoveName= "Ember" , Types = t1, Accuracy = 90 , AttackDamage = 20, Pokemons = new List<Pokemon> { p1 } };
+                Moves m2 = new Moves();
+                Moves m3 = new Moves();
+                Moves m4 = new Moves();
+                //Moves m5 = new Moves();
+                //Moves m6 = new Moves();
+                //Moves m7 = new Moves();
+                //Moves m8 = new Moves();
 
 
+                //adding moves
+                db.Moves.Add(m1);
+                db.Moves.Add(m2);
+                db.Moves.Add(m3);
+                db.Moves.Add(m4);
+                Console.WriteLine("Adding moves");
 
 
                 //adding types

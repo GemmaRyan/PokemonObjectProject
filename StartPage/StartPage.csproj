@@ -77,10 +77,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="P1Battle.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="P1Select.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,9 +87,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="P1Battle.xaml.cs">
-      <DependentUpon>P1Battle.xaml</DependentUpon>
-    </Compile>
     <Compile Include="P1Select.xaml.cs">
       <DependentUpon>P1Select.xaml</DependentUpon>
     </Compile>
