@@ -65,6 +65,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Split.xaml.cs">
+      <DependentUpon>Split.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,21 +80,25 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="P1Select.xaml">
+    <Page Include="P1Battle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="P2Select.xaml">
+    <Page Include="SelectPoke.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Split.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="P1Select.xaml.cs">
-      <DependentUpon>P1Select.xaml</DependentUpon>
+    <Compile Include="P1Battle.xaml.cs">
+      <DependentUpon>P1Battle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="P2Select.xaml.cs">
-      <DependentUpon>P2Select.xaml</DependentUpon>
+    <Compile Include="SelectPoke.xaml.cs">
+      <DependentUpon>SelectPoke.xaml</DependentUpon>
     </Compile>
     <Compile Include="PokemonList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -124,6 +131,9 @@
     <Resource Include="Images\Blastoise-front.png" />
     <Resource Include="Images\Charizard-front.png" />
     <Resource Include="Images\Venusaur-front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Background.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -13,5 +13,7 @@ namespace StartPage
     /// </summary>
     public partial class App : Application
     {
+        public static Pokemon P1Selected;
+        public static Pokemon P2Selected;
     }
 }

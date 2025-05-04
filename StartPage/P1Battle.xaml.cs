@@ -19,9 +19,29 @@ namespace StartPage
     /// </summary>
     public partial class P1Battle : Window
     {
-        public P1Battle()
+
+        public P1Battle()  // Constructor that takes the Pokémon
         {
             InitializeComponent();
+            DisplayPokemonData();  // Method to display the data
+        }
+
+        public Pokemon P2SelectedPokemon { get; set; }
+        public Pokemon P1SelectedPokemon { get; set; }  // Public property to receive data
+
+        private void DisplayPokemonData()
+        {
+            if (P1SelectedPokemon != null && P2SelectedPokemon != null)
+            {
+                // Display the data in your controls
+                P1Namelb.Content = P1SelectedPokemon.PokemonName;
+                P1img.Source = new BitmapImage(new Uri(P1SelectedPokemon.ImageURL_Front));
+
+
+                P2Namelb.Content = P2SelectedPokemon.PokemonName;
+                P1img.Source = new BitmapImage(new Uri(P1SelectedPokemon.ImageURL_Front));
+
+            }
         }
     }
 }
