@@ -6,12 +6,13 @@
         xmlns:local="clr-namespace:StartPage"
         mc:Ignorable="d"
         Title="Split" Height="450" Width="800"
+        BorderThickness="15" BorderBrush="White"
         WindowStartupLocation="CenterScreen">
     <Grid Background="LightBlue">
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,119,0,0" >
             <TextBlock Text="Pokémon Battle Game" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
         </StackPanel>
-        <Button x:Name="P2Btn" Content="Player 2 Select" Click="P2Btn_Click" Margin="489,219,111,131"/>
+        <Button x:Name="P2Btn" Content="Player 2 Select" Click="P2Btn_Click" Margin="411,219,189,131"/>
         <Button x:Name="P1Btn" Content="Player 1 Select" Click="P1Btn_Click" Margin="175,219,425,131"/>
     </Grid>
 </Window>

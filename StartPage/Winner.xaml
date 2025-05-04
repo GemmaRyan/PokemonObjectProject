@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StartPage"
         mc:Ignorable="d"
-        Title="Winner" Height="450" Width="800">
-    <Grid>
-        <Image x:Name="WinnerImg" HorizontalAlignment="Left" Height="182" Margin="293,217,0,0" VerticalAlignment="Top" Width="207"/>
-        <Label x:Name="WinLb" Content="Label" HorizontalAlignment="Left" Margin="312,125,0,0" VerticalAlignment="Top" Height="46" Width="166"/>
-
+     Title="You Win!" Height="450" Width="800"
+        Background="white" BorderBrush="#ff9a9a" BorderThickness="40">
+    <Grid Margin="0,0,-80,-86">
+        <Label x:Name="WinnerName" Content="Label" HorizontalAlignment="Left" Margin="312,276,0,0" VerticalAlignment="Top" Width="302" Height="51" RenderTransformOrigin="0.701,-0.601" FontSize="30"/>
+        <Image x:Name="WinnerImg" HorizontalAlignment="Left" Height="215" Margin="266,71,0,0" VerticalAlignment="Top" Width="253"/>
     </Grid>
+
 </Window>

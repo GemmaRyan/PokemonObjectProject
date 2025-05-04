@@ -23,7 +23,7 @@ namespace StartPage
         {
             //Yippee you win
             InitializeComponent();
-            WinLb.Content = winner + " Wins!";
+            WinnerName.Content = winner + " Wins!";
             WinnerImg.Source = new BitmapImage(new Uri(winnerImageUrl, UriKind.Absolute));
         }
     }

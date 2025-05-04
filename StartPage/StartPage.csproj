@@ -135,14 +135,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Blastoise-front.png" />
-    <Resource Include="Images\Charizard-front.png" />
-    <Resource Include="Images\Venusaur-front.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Background.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\background2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
