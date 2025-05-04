@@ -5,36 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StartPage"
         mc:Ignorable="d"
-        Title="P1Battle" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen"
-        >
-    <Grid HorizontalAlignment="Right" Width="800">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*"/>
-            <ColumnDefinition Width="222*"/>
-            <ColumnDefinition Width="111*"/>
-            <ColumnDefinition Width="347*"/>
-            <ColumnDefinition Width="90*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="83*"/>
-            <RowDefinition Height="120*"/>
-            <RowDefinition Height="163*"/>
-            <RowDefinition Height="61*"/>
-        </Grid.RowDefinitions>
-        <ProgressBar HorizontalAlignment="Left" Height="19" Margin="232,7,0,0" VerticalAlignment="Top" Width="131" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" Background="#FF37FF00" Foreground="#FFFF3A00"/>
-        <Label x:Name="P2Namelb" Content="PokeName" HorizontalAlignment="Left" Margin="137,7,0,0" VerticalAlignment="Top" Height="39" Width="89" Grid.Column="3" Grid.Row="1"/>
-        <ProgressBar HorizontalAlignment="Left" Height="20" Margin="96,80,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="2" Foreground="#FFFF2B00" Background="#FF00FF2F"/>
-        <Label x:Name="P1Namelb" Content="PokeName" HorizontalAlignment="Left" Margin="21,71,0,0" VerticalAlignment="Top" Height="40" Width="82" Grid.ColumnSpan="2" Grid.Row="2" RenderTransformOrigin="0.5,0.5"/>
-        <Image x:Name="P1img" HorizontalAlignment="Left" Height="154" Margin="11,30,0,0" VerticalAlignment="Top" Width="153" Grid.Row="3" Grid.RowSpan="2" RenderTransformOrigin="0.558,0.298" Grid.Column="1"/>
-        <Image HorizontalAlignment="Left" Height="154" Margin="226,17,0,0" VerticalAlignment="Top" Width="153" Grid.Column="3" Grid.RowSpan="2" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="12,30,0,0" VerticalAlignment="Top" Height="60" Width="155" Grid.Column="3" Grid.Row="3" Background="Red" />
-        <Button Content="Button" HorizontalAlignment="Left" Margin="174,30,0,0" VerticalAlignment="Top" Height="60" Width="155" Grid.Column="3" Grid.Row="3" Background="#FFFF0000" Foreground="Black"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="12,96,0,0" VerticalAlignment="Top" Height="60" Width="155" Grid.Column="3" Grid.Row="3" Background="#FFFF0000"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="173,96,0,0" VerticalAlignment="Top" Height="60" Width="155" RenderTransformOrigin="0.5,0.5" Grid.Column="3" Grid.Row="3" Background="#FFFF0000"/>
-        <Label Content="Player 1s Turn" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Height="55" Width="200" FontSize="25" Grid.Column="1" Grid.Row="1"/>
+         Title="Battle" Height="400" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10,10,10,10">
 
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Height="69" Margin="0,295,0,0"/>
+        <Button x:Name="Move4Btn" Margin="353,238,127,71" Click="Move_Click"/>
+        <Button x:Name="Move3Btn" Margin="458,238,22,71" Click="Move_Click"/>
+        <Button x:Name="Move2Btn" Margin="458,302,22,7" Click="Move_Click"/>
+        <Button x:Name="Move1Btn" Margin="353,302,127,0" Click="Move_Click" Height="54" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="ActiveHealth" Margin="174,102,247,238"/>
+        <Image x:Name="ActiveImg" Margin="42,190,388,23" />
+        <Image x:Name="OpponentImg" Margin="405,97,39,159" />
+        <ProgressBar x:Name="OpponentHealth" Margin="412,32,16,311"/>
+        <TextBlock x:Name="OpponentName" TextWrapping="Wrap" Text="TextBlock" Margin="224,32,173,291" Foreground="Black" Background="#FFFDFDFD"/>
+        <TextBlock x:Name="ActiveName" TextWrapping="Wrap" Text="TextBlock" Margin="10,100,411,213" Foreground="Black" Background="White"/>
 
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/background2.png"
+                    Stretch="UniformToFill" />
+        </Grid.Background>
     </Grid>
 </Window>

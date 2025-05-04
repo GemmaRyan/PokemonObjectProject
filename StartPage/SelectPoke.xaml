@@ -23,7 +23,7 @@
             <Image x:Name="ImgBx" Height="200" Stretch="Uniform" Margin="0,0,0,10" />
             <ListBox x:Name="InfoBx" Height="100" Margin="0,0,0,20" />
             <Button x:Name="StartBtn" Content="Start Battle" Click="StartBtn_Click"
-                Width="200" Height="40" HorizontalAlignment="Center" IsEnabled="False"/>
+                Width="200" Height="40" HorizontalAlignment="Center" />
         </StackPanel>
     </Grid>
 </Window>

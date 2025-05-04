@@ -26,14 +26,14 @@ namespace StartPage
 
         private void P1Btn_Click(object sender, RoutedEventArgs e)
         {
-            var p1Select = new P1Select(1); // Indicate Player 1
+            var p1Select = new P1Select(1); // Plyer1 can chose a pokemon
             p1Select.Show();
             this.Close();
         }
 
         private void P2Btn_Click(object sender, RoutedEventArgs e)
         {
-            var p2Select = new P1Select(2); // Indicate Player 2
+            var p2Select = new P1Select(2); // Player 2 chose a pokemon
             p2Select.Show();
             this.Close();
         }

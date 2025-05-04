@@ -1,0 +1,14 @@
+﻿<Window x:Class="StartPage.Winner"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StartPage"
+        mc:Ignorable="d"
+        Title="Winner" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="WinnerImg" HorizontalAlignment="Left" Height="182" Margin="293,217,0,0" VerticalAlignment="Top" Width="207"/>
+        <Label x:Name="WinLb" Content="Label" HorizontalAlignment="Left" Margin="312,125,0,0" VerticalAlignment="Top" Height="46" Width="166"/>
+
+    </Grid>
+</Window>
