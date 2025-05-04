@@ -21,8 +21,8 @@
             <RowDefinition Height="239*"/>
             <RowDefinition Height="45*"/>
         </Grid.RowDefinitions>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="65,1,26,1" Grid.Row="3" BorderBrush="Black"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="25,1,65,1" Grid.Row="3" Grid.Column="2" BorderBrush="Black"/>
+        <ListBox x:Name="NameBx" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="65,1,26,1" Grid.Row="3" BorderBrush="Black" SelectionChanged="NameBx_SelectionChanged_1"/>
+        <ListBox x:Name="InfoBx" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="25,147,65,1" Grid.Row="3" Grid.Column="2" BorderBrush="Black"/>
         <Button Content="Start" HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Width="88" Grid.Row="3" FontSize="20" Grid.Column="1" Click="Button_Click"/>
 
 
@@ -31,6 +31,15 @@
             <TextBox HorizontalAlignment="Left" Margin="220,40,0,0" TextWrapping="Wrap" Text="Search Pokemon..." VerticalAlignment="Top" Width="366" Height="40" FontSize="20"/>
         </Grid>
         <Label Content="Player 1 - Chose your Pokemon!" HorizontalAlignment="Left" Margin="253,0,0,0" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="3" Height="38" Width="331" FontSize="20"/>
+        <Image x:Name="ImgBx" Grid.Column="2" HorizontalAlignment="Left" Height="124" Margin="85,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="126">
+            <Image.OpacityMask>
+                <ImageBrush/>
+            </Image.OpacityMask>
+            <Image.DataContext>
+                <local:Pokemon/>
+            </Image.DataContext>
+        </Image>
+        <TextBlock x:Name="errorbx" Grid.Column="1" HorizontalAlignment="Center" Margin="0,177,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="88"/>
 
     </Grid>
 </Window>
